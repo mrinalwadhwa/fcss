@@ -31,7 +31,6 @@
 
 package com.flashartofwar.fcss.styles
 {
-    import com.flashartofwar.fcss.enum.CSSProperties;
     import com.flashartofwar.fcss.objects.AbstractOrderedObject;
 
     import flash.net.registerClassAlias;
@@ -60,7 +59,7 @@ package com.flashartofwar.fcss.styles
             super(this);
 
             //
-            styleName = CSSProperties.DEFAULT_STYLE_NAME;
+            styleName = "EmptyStyle";
             propertiesIndex.push("styleName");
         }
 

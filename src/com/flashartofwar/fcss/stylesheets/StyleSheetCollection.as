@@ -30,7 +30,6 @@
 
 package com.flashartofwar.fcss.stylesheets
 {
-    import com.flashartofwar.fcss.enum.CSSProperties;
     import com.flashartofwar.fcss.styles.IStyle;
     import com.flashartofwar.fcss.styles.Style;
 
@@ -319,7 +318,7 @@ package com.flashartofwar.fcss.stylesheets
             for each (styleSheet in styleSheetInstances)
             {
                 tempStyle = styleSheet.styleLookup(styleName, getRelated);
-                if (tempStyle.styleName != CSSProperties.DEFAULT_STYLE_NAME)
+                if (tempStyle.styleName != "EmptyStyle")
                     baseStyle.merge(tempStyle);
             }
 

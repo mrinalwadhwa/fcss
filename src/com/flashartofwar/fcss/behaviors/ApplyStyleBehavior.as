@@ -31,7 +31,6 @@
 package com.flashartofwar.fcss.behaviors
 {
     import com.flashartofwar.fcss.applicators.IApplicator;
-    import com.flashartofwar.fcss.enum.CSSProperties;
     import com.flashartofwar.fcss.styles.IStyle;
     import com.flashartofwar.fcss.stylesheets.IStyleSheet;
 
@@ -143,7 +142,7 @@ package com.flashartofwar.fcss.behaviors
                 style = _styleSheet.getStyle.apply(null, defaultStyleNames);
             }
 
-            if (style.styleName != CSSProperties.DEFAULT_STYLE_NAME)
+            if (style.styleName != "EmptyStyle")
                 applyStyle(style);
         }
 
